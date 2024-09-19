@@ -80,11 +80,11 @@
 
         layer_CUSTOM {
             bindings = <
- &trans  &trans  &trans       &trans   &trans  &trans            &trans                                                            &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans       &trans   &trans  &trans            &trans                                                            &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans       &trans   &trans  &trans            &trans            &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans       &trans   &trans  &trans                                      &trans                  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &kp LS(TAB)  &kp TAB                    &trans  &kp LEFT_COMMAND  &trans                  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans   &trans   &trans  &trans            &trans                                                            &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans   &trans   &trans  &trans            &trans                                                            &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans   &trans   &trans  &trans            &trans            &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans   &trans   &trans  &trans                                      &trans                  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &kp TAB  &kp TAB                    &trans  &kp LEFT_COMMAND  &trans                  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
