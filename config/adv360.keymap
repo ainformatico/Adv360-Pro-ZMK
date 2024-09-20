@@ -33,7 +33,7 @@
         app_switcher_left: app_switcher_left {
             compatible = "zmk,behavior-mod-morph";
             label = "APP_SWITCHER_LEFT";
-            bindings = <&kp LEFT>, <&kp LS(TAB)>;
+            bindings = <&kp LEFT>, <&kp TAB>;
 
             #binding-cells = <0>;
             mods = <(MOD_LGUI)>;
@@ -43,7 +43,7 @@
         app_switcher_right: app_switcher_right {
             compatible = "zmk,behavior-mod-morph";
             label = "APP_SWITCHER_RIGHT";
-            bindings = <&kp RIGHT>, <&kp TAB>;
+            bindings = <&kp RIGHT>, <&kp LS(TAB)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LGUI)>;
@@ -58,6 +58,13 @@
             bindings = <&kp LG(LA(V))>;
             label = "HISTORY";
         };
+
+        magic_paste: magic_paste {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LC(LG(V)))>;
+            label = "MAGIC_PASTE";
+        };
     };
 
     keymap {
@@ -65,11 +72,11 @@
 
         default_layer {
             bindings = <
-&kp EQUAL         &kp EXCLAMATION  &kp AT      &kp POUND            &kp DOLLAR          &kp PERCENT  &tog 1                                                                         &mo 3      &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS
-&kp TAB           &kp Q            &kp W       &kp E                &kp R               &kp T        &none                                                                          &none      &kp Y      &kp U          &kp I         &kp O                 &kp P                  &kp BSLH
-&kp LEFT_CONTROL  &kp A            &kp S       &kp D                &kp F               &kp G        &none     &kp LEFT_COMMAND         &kp LALT      &kp RIGHT_COMMAND  &kp RCTRL  &history   &kp H      &kp J          &kp K         &kp L                 &kp SEMI               &kp SQT
-&kp LSHFT         &kp Z            &kp X       &kp C                &kp V               &kp B                                           &kp HOME      &kp PG_UP                                &kp N      &kp M          &kp COMMA     &kp DOT               &kp FSLH               &kp RSHFT
-&mo 2             &kp GRAVE        &lt 1 CAPS  &app_switcher_right  &app_switcher_left               &kp BSPC  &mt LEFT_COMMAND ESCAPE  &kp END       &kp PG_DN          &kp ENTER  &kp SPACE             &kp DOWN       &kp UP        &kp LBKT              &kp RBKT               &mo 2
+&kp EQUAL         &kp EXCLAMATION  &kp AT      &kp POUND           &kp DOLLAR           &kp PERCENT  &tog 1                                                                         &mo 3         &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS
+&kp TAB           &kp Q            &kp W       &kp E               &kp R                &kp T        &none                                                                          &magic_paste  &kp Y      &kp U          &kp I         &kp O                 &kp P                  &kp BSLH
+&kp LEFT_CONTROL  &kp A            &kp S       &kp D               &kp F                &kp G        &none     &kp LEFT_COMMAND         &kp LALT      &kp RIGHT_COMMAND  &kp RCTRL  &history      &kp H      &kp J          &kp K         &kp L                 &kp SEMI               &kp SQT
+&kp LSHFT         &kp Z            &kp X       &kp C               &kp V                &kp B                                           &kp HOME      &kp PG_UP                                   &kp N      &kp M          &kp COMMA     &kp DOT               &kp FSLH               &kp RSHFT
+&mo 2             &kp GRAVE        &lt 1 CAPS  &app_switcher_left  &app_switcher_right               &kp BSPC  &mt LEFT_COMMAND ESCAPE  &kp END       &kp PG_DN          &kp ENTER  &kp SPACE                &kp DOWN       &kp UP        &kp LBKT              &kp RBKT               &mo 2
             >;
         };
 
