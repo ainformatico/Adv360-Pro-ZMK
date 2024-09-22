@@ -82,6 +82,16 @@
             flavor = "tap-preferred";
             quick-tap-ms = <125>;
         };
+
+        quick_key_tap_hold_right: quick_key_tap_hold_right {
+            compatible = "zmk,behavior-hold-tap";
+            label = "QUICK_KEY_TAP_HOLD_RIGHT";
+            bindings = <&sk>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            flavor = "tap-preferred";
+        };
     };
 
     macros {
