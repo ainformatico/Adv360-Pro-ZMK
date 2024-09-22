@@ -89,8 +89,17 @@
             bindings = <&sk>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <300>;
+            tapping-term-ms = <350>;
             flavor = "tap-preferred";
+        };
+
+        enter_delete: enter_delete {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ENTER_DELETE";
+            bindings = <&kp ENTER>, <&kp BACKSPACE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI)>;
         };
     };
 
@@ -126,7 +135,7 @@
 &kp TAB           &kp Q            &kp W           &kp E               &kp R                &kp T        &screenshot_area                                                                                                                        &magic_paste                              &kp Y      &kp U          &kp I         &kp O                 &kp P                  &kp BSLH
 &kp LEFT_CONTROL  &kp A            &kp S           &kp D               &kp F                &kp G        &none             &quick_key_tap_hold LEFT_SHIFT BACKSLASH  &kp LALT      &kp RIGHT_COMMAND  &quick_key_tap_hold RIGHT_SHIFT RIGHT_ALT  &history                                  &kp H      &kp J          &kp K         &kp L                 &kp SEMI               &kp SQT
 &kp LSHFT         &kp Z            &kp X           &kp C               &kp V                &kp B                                                                    &kp HOME      &kp PG_UP                                                                                               &kp N      &kp M          &kp COMMA     &kp DOT               &kp FSLH               &kp RSHFT
-&mo 2             &kp GRAVE        &lt 1 CAPSLOCK  &app_switcher_left  &app_switcher_right               &kp BSPC          &mt LEFT_COMMAND ESCAPE                   &kp END       &kp PG_DN          &kp ENTER                                  &quick_space_control RIGHT_CONTROL SPACE             &kp DOWN       &kp UP        &kp LBKT              &kp RBKT               &mo 2
+&mo 2             &kp GRAVE        &lt 1 CAPSLOCK  &app_switcher_left  &app_switcher_right               &kp BSPC          &mt LEFT_COMMAND ESCAPE                   &kp END       &kp PG_DN          &enter_delete                              &quick_space_control RIGHT_CONTROL SPACE             &kp DOWN       &kp UP        &kp LBKT              &kp RBKT               &mo 2
             >;
         };
 
