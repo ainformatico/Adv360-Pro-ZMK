@@ -67,8 +67,9 @@
             bindings = <&sk>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <120>;
+            tapping-term-ms = <200>;
             flavor = "tap-preferred";
+            quick-tap-ms = <(-1)>;
         };
 
         quick_space_control: quick_space_control {
