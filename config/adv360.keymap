@@ -61,17 +61,6 @@
             quick-tap-ms = <(-1)>;
         };
 
-        quick_space_control: quick_space_control {
-            compatible = "zmk,behavior-hold-tap";
-            label = "QUICK_SPACE_CONTROL";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "tap-preferred";
-            quick-tap-ms = <125>;
-        };
-
         quick_key_tap_hold_right: quick_key_tap_hold_right {
             compatible = "zmk,behavior-hold-tap";
             label = "QUICK_KEY_TAP_HOLD_RIGHT";
@@ -80,16 +69,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
-        };
-
-        enter_delete: enter_delete {
-            compatible = "zmk,behavior-mod-morph";
-            label = "ENTER_DELETE";
-            bindings = <&kp ENTER>, <&kp BSPC>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LGUI)>;
-            keep-mods = <(MOD_LGUI)>;
+            quick-tap-ms = <125>;
         };
     };
 
@@ -121,11 +101,11 @@
 
         default_layer {
             bindings = <
-&kp EQUAL         &kp EXCLAMATION  &kp AT          &kp POUND           &kp DOLLAR           &kp PERCENT  &tog 1                                                                                                  &mo 3         &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS
-&kp TAB           &kp Q            &kp W           &kp E               &kp R                &kp T        &screenshot_area                                                                                        &magic_paste  &kp Y      &kp U          &kp I         &kp O                 &kp P                  &kp BSLH
-&kp LEFT_CONTROL  &kp A            &kp S           &kp D               &kp F                &kp G        &none             &mt LEFT_SHIFT BACKSLASH  &kp LALT      &kp RIGHT_CONTROL  &mt RIGHT_SHIFT RIGHT_ALT  &history      &kp H      &kp J          &kp K         &kp L                 &kp SEMI               &kp SQT
-&kp LSHFT         &kp Z            &kp X           &kp C               &kp V                &kp B                                                    &kp HOME      &kp PG_UP                                                   &kp N      &kp M          &kp COMMA     &kp DOT               &kp FSLH               &kp RSHFT
-&mo 2             &kp GRAVE        &lt 1 CAPSLOCK  &app_switcher_left  &app_switcher_right               &kp BSPC          &mt LEFT_COMMAND ESCAPE   &kp END       &kp PG_DN          &kp ENTER                  &lt 4 SPACE              &kp DOWN       &kp UP        &kp LBKT              &kp RBKT               &mo 2
+&kp EQUAL         &kp EXCLAMATION  &kp AT          &kp POUND           &kp DOLLAR           &kp PERCENT  &tog 1                                                                                                                                &mo 3         &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS
+&kp TAB           &kp Q            &kp W           &kp E               &kp R                &kp T        &screenshot_area                                                                                                                      &magic_paste  &kp Y      &kp U          &kp I         &kp O                 &kp P                  &kp BSLH
+&kp LEFT_CONTROL  &kp A            &kp S           &kp D               &kp F                &kp G        &none                     &mt LEFT_SHIFT BACKSLASH  &kp LALT      &kp RIGHT_CONTROL  &quick_key_tap_hold_right RIGHT_SHIFT RIGHT_ALT  &history      &kp H      &kp J          &kp K         &kp L                 &kp SEMI               &kp SQT
+&kp LSHFT         &kp Z            &kp X           &kp C               &kp V                &kp B                                                            &kp HOME      &kp PG_UP                                                                         &kp N      &kp M          &kp COMMA     &kp DOT               &kp FSLH               &kp RSHFT
+&mo 2             &kp GRAVE        &lt 1 CAPSLOCK  &app_switcher_left  &app_switcher_right               &mt LEFT_SHIFT BACKSPACE  &mt LEFT_COMMAND ESCAPE   &kp END       &kp PG_DN          &kp ENTER                                        &lt 4 SPACE              &kp DOWN       &kp UP        &kp LBKT              &kp RBKT               &mo 2
             >;
         };
 
