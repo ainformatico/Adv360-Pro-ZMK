@@ -41,9 +41,9 @@
             flavor = "tap-preferred";
         };
 
-        backspace_shift: backspace_shift {
+        quick_tap_repeat_shift: quick_tap_repeat_shift {
             compatible = "zmk,behavior-hold-tap";
-            label = "BACKSPACE_SHIFT";
+            label = "QUICK_TAP_REPEAT_SHIFT";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -80,11 +80,11 @@
 
         default_layer {
             bindings = <
-&kp EQUAL         &kp NUMBER_1  &kp NUMBER_2    &kp N3    &kp N4     &kp N5  &tog 1                                                                                                                                      &mo 3         &kp N6  &kp N7    &kp N8     &kp N9    &kp N0                  &kp MINUS
-&kp TAB           &kp Q         &kp W           &kp E     &kp R      &kp T   &screenshot_area                                                                                                                            &magic_paste  &kp Y   &kp U     &kp I      &kp O     &kp P                   &kp BSLH
-&kp LEFT_CONTROL  &kp A         &kp S           &kp D     &kp F      &kp G   &none                                &lt 5 BACKSLASH        &kt LALT      &kp RIGHT_CONTROL  &quick_key_tap_hold_right RIGHT_ALT RIGHT_ALT  &history      &kp H   &kp J     &kp K      &kp L     &mt RIGHT_CONTROL SEMI  &kp SQT
-&kp LSHFT         &kp Z         &kp X           &kp C     &kp V      &kp B                                                               &kp HOME      &kp PG_UP                                                                       &kp N   &kp M     &kp COMMA  &kp DOT   &kp FSLH                &kp RSHFT
-&mo 2             &kp GRAVE     &lt 1 CAPSLOCK  &kp LEFT  &kp RIGHT          &backspace_shift LEFT_GUI BACKSPACE  &mt LEFT_SHIFT ESCAPE  &kp END       &kp PG_DN          &kp ENTER                                      &lt 4 SPACE           &kp DOWN  &kp UP     &kp LBKT  &kp RBKT                &mo 5
+&kp EQUAL             &kp NUMBER_1  &kp NUMBER_2    &kp N3    &kp N4     &kp N5  &tog 1                                                                                                                                             &mo 3         &kp N6  &kp N7    &kp N8     &kp N9    &kp N0                  &kp MINUS
+&kp TAB               &kp Q         &kp W           &kp E     &kp R      &kp T   &screenshot_area                                                                                                                                   &magic_paste  &kp Y   &kp U     &kp I      &kp O     &kp P                   &kp BSLH
+&mt LEFT_CONTROL ESC  &kp A         &kp S           &kp D     &kp F      &kp G   &none                                       &lt 5 BACKSLASH        &kt LALT      &kp RIGHT_CONTROL  &quick_key_tap_hold_right RIGHT_ALT RIGHT_ALT  &history      &kp H   &kp J     &kp K      &kp L     &mt RIGHT_CONTROL SEMI  &kp SQT
+&kp LSHFT             &kp Z         &kp X           &kp C     &kp V      &kp B                                                                      &kp HOME      &kp PG_UP                                                                       &kp N   &kp M     &kp COMMA  &kp DOT   &kp FSLH                &kp RSHFT
+&mo 2                 &kp GRAVE     &lt 1 CAPSLOCK  &kp LEFT  &kp RIGHT          &quick_tap_repeat_shift LEFT_GUI BACKSPACE  &mt LEFT_SHIFT ESCAPE  &kp END       &kp PG_DN          &quick_tap_repeat_shift RIGHT_SHIFT ENTER      &lt 4 SPACE           &kp DOWN  &kp UP     &kp LBKT  &kp RBKT                &mo 5
             >;
         };
 
