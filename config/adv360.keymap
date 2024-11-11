@@ -113,11 +113,11 @@
 
         layer_fn {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4            &kp F5             &kp F6  &tog 1                                      &mo 3   &kp F7  &kp F8            &kp F9          &kp F10  &kp F11  &kp F12
-&trans  &trans  &trans  &trans            &trans             &trans  &none                                       &none   &trans  &trans            &trans          &trans   &trans   &trans
-&trans  &trans  &trans  &trans            &trans             &trans  &none   &trans  &trans      &trans  &trans  &none   &trans  &trans            &trans          &trans   &trans   &trans
-&trans  &trans  &trans  &trans            &trans             &trans                  &trans      &trans                  &trans  &trans            &trans          &trans   &trans   &trans
-&trans  &trans  &trans  &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))          &trans  &trans  &trans      &trans  &trans  &trans          &kp LC(LG(DOWN))  &kp LC(LG(UP))  &trans   &trans   &trans
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &tog 1                                      &mo 3   &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&trans  &trans  &trans  &trans  &trans  &trans  &none                                       &none   &trans  &trans  &trans  &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &none   &trans  &trans      &trans  &trans  &none   &trans  &trans  &trans  &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans   &trans   &trans
             >;
         };
 
@@ -133,11 +133,11 @@
 
         layer_symbol {
             bindings = <
-&trans           &kp GRAVE         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AMPS          &kp COMMA      &trans                                      &trans  &trans             &trans         &trans       &trans     &trans  &trans
-&kp EXCLAMATION  &kp CARET         &kp SINGLE_QUOTE      &kp DOUBLE_QUOTES      &kp DOLLAR        &kp QUESTION   &trans                                      &trans  &trans             &trans         &trans       &trans     &trans  &trans
-&kp POUND        &kp LEFT_BRACE    &kp EQUAL             &kp UNDERSCORE         &kp RIGHT_BRACE   &kp ASTERISK   &trans  &to 5   &trans      &trans  &to 6   &trans  &kp RIGHT_COMMAND  &kp BACKSPACE  &kp TAB      &kp SPACE  &trans  &trans
-&kp TILDE        &kp LESS_THAN     &kp PIPE              &kp MINUS              &kp GREATER_THAN  &kp BACKSLASH                  &trans      &trans                  &trans             &kp DELETE     &kp LS(TAB)  &trans     &trans  &trans
-&trans           &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp PLUS               &kp AMPERSAND                    &trans  &trans  &trans      &trans  &trans  &trans                     &trans         &trans       &trans     &trans  &trans
+&trans           &kp GRAVE         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AMPS          &kp COMMA      &trans                                      &trans  &trans  &trans            &trans       &trans     &trans  &trans
+&kp EXCLAMATION  &kp CARET         &kp SINGLE_QUOTE      &kp DOUBLE_QUOTES      &kp DOLLAR        &kp QUESTION   &trans                                      &trans  &trans  &kp DELETE        &trans       &trans     &trans  &trans
+&kp POUND        &kp LEFT_BRACE    &kp EQUAL             &kp UNDERSCORE         &kp RIGHT_BRACE   &kp ASTERISK   &trans  &to 5   &trans      &trans  &to 6   &trans  &trans  &kp BACKSPACE     &kp TAB      &kp SPACE  &trans  &trans
+&kp TILDE        &kp LESS_THAN     &kp PIPE              &kp MINUS              &kp GREATER_THAN  &kp BACKSLASH                  &trans      &trans                  &trans  &kp LEFT_COMMAND  &kp LS(TAB)  &trans     &trans  &trans
+&trans           &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp PLUS               &kp TILDE                        &trans  &trans  &trans      &trans  &trans  &trans          &trans            &trans       &trans     &trans  &trans
             >;
         };
 
@@ -153,11 +153,11 @@
 
         layer_navigation {
             bindings = <
-&trans  &trans  &trans          &trans          &trans           &trans  &trans                                      &trans  &trans  &trans           &trans  &trans  &trans       &trans
-&trans  &trans  &trans          &kp UP_ARROW    &trans           &trans  &trans                                      &trans  &trans  &trans           &trans  &trans  &trans       &trans
-&trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans  &trans  &trans      &trans  &to 0   &trans  &trans  &kp LC(LS(TAB))  &trans  &trans  &kp LC(TAB)  &trans
-&trans  &trans  &trans          &trans          &trans           &trans                  &trans      &trans                  &trans  &trans           &trans  &trans  &trans       &trans
-&trans  &trans  &trans          &trans          &trans                   &trans  &trans  &trans      &trans  &trans  &trans          &trans           &trans  &trans  &trans       &trans
+&trans  &trans  &trans          &trans                  &trans             &trans  &trans                                      &trans  &trans           &trans                  &trans          &trans  &trans       &trans
+&trans  &trans  &trans          &kp UP_ARROW            &trans             &trans  &trans                                      &trans  &trans           &trans                  &trans          &trans  &trans       &trans
+&trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW          &kp RIGHT_ARROW    &trans  &trans  &trans  &trans      &trans  &to 0   &trans  &kp LC(LS(TAB))  &trans                  &trans          &trans  &kp LC(TAB)  &trans
+&trans  &trans  &trans          &trans                  &trans             &trans                  &trans      &trans                  &trans           &trans                  &trans          &trans  &trans       &trans
+&trans  &trans  &trans          &kp LG(LC(LEFT_ARROW))  &kp LG(LC(RIGHT))          &trans  &trans  &trans      &trans  &trans  &trans                   &kp LC(LG(DOWN_ARROW))  &kp LG(LC(UP))  &trans  &trans       &trans
             >;
         };
     };
