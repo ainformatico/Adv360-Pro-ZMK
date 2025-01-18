@@ -20,6 +20,11 @@
     quick-tap-ms = <150>;
 };
 
+&mt {
+    tapping-term-ms = <150>;
+    quick-tap-ms = <125>;
+};
+
 / {
     behaviors {
         #include "macros.dtsi"
