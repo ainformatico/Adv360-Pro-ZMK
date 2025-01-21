@@ -81,7 +81,7 @@
 &kp TAB               &kp Q               &kp W               &kp E       &kp R             &kp T   &screenshot_area                                                             &magic_paste  &kp Y   &kp U                &kp I           &kp O                 &kp P                 &kp BSLH
 &mt LEFT_CONTROL ESC  &kp A               &kp S               &kp D       &kp F             &kp G   &none                &meh             &kp ENTER      &trans     &kp LA(E)    &history      &kp H   &kp J                &kp K           &kp L                 &kp SEMICOLON         &kp SQT
 &kp LSHFT             &hm LEFT_COMMAND Z  &hm LEFT_CONTROL X  &hm LALT C  &hm LEFT_SHIFT V  &kp B                                         &kp HOME       &kp PG_UP                             &kp N   &hm RIGHT_COMMAND M  &hm LALT COMMA  &hm LEFT_CONTROL DOT  &hm RIGHT_SHIFT FSLH  &kp RSHFT
-&mo 2                 &kp GRAVE           &kp CAPSLOCK        &kp LEFT    &kp RIGHT                 &mt LEFT_GUI ESCAPE  &lt 1 BACKSPACE  &kp END        &kp PG_DN  &lt 6 ENTER  &lt 4 SPACE           &kp DOWN             &kp UP          &kp LBKT              &kp RBKT              &mo 5
+&mo 2                 &kp GRAVE           &kp CAPSLOCK        &kp LEFT    &kp RIGHT                 &mt LEFT_GUI ESCAPE  &lt 1 BACKSPACE  &kp END        &kp PG_DN  &lt 6 ENTER  &lt 4 SPACE           &kp DOWN             &kp UP          &kp LBKT              &kp RBKT              &mo 2
             >;
         };
 
