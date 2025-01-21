@@ -127,11 +127,11 @@
 
         layer_system {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans    &trans                &trans                &trans           &trans      &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans    &trans                &trans                &trans           &trans      &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp C_PP  &kp C_PREV            &kp C_VOLUME_DOWN     &kp C_VOLUME_UP  &kp C_NEXT  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans    &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans           &kp K_MUTE  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans            &trans                &trans                &trans           &trans      &trans
+&trans  &trans  &trans            &trans    &trans        &trans  &trans                                      &trans  &trans    &trans                &trans                &trans           &trans      &trans
+&trans  &trans  &trans            &trans    &trans        &trans  &trans                                      &trans  &trans    &trans                &trans                &trans           &trans      &trans
+&trans  &trans  &trans            &trans    &trans        &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp C_PP  &kp C_PREV            &kp C_VOLUME_DOWN     &kp C_VOLUME_UP  &kp C_NEXT  &trans
+&trans  &trans  &screenshot_area  &history  &magic_paste  &trans                  &trans      &trans                  &trans    &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans           &kp K_MUTE  &trans
+&trans  &trans  &trans            &trans    &trans                &trans  &trans  &trans      &trans  &trans  &trans            &trans                &trans                &trans           &trans      &trans
             >;
         };
 
