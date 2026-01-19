@@ -115,7 +115,7 @@
             >;
         };
 
-        layer_keypad {
+        numbers {
             bindings = <
 &kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &trans                                                     &mo 3      &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
 &kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &none                                                      &none      &kp Y   &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp BSLH
@@ -145,7 +145,7 @@
             >;
         };
 
-        layer_symbol {
+        symbols {
             bindings = <
 &trans  &trans                &trans             &trans             &trans                 &trans         &trans                                      &trans  &trans         &trans            &trans       &trans       &trans             &trans
 &trans  &kp CARET             &kp SINGLE_QUOTE   &kp DOUBLE_QUOTES  &kp DOLLAR             &kp EXCL       &trans                                      &trans  &kp AMPERSAND  &kp LEFT_BRACKET  &kp AT       &kp PERCENT  &kp RIGHT_BRACKET  &trans
@@ -155,7 +155,7 @@
             >;
         };
 
-        layer_system {
+        system {
             bindings = <
 &trans  &trans  &trans            &trans    &trans        &trans  &trans                                      &trans  &trans    &trans                &trans                &trans           &trans      &trans
 &trans  &trans  &trans            &trans    &trans        &trans  &trans                                      &trans  &trans    &trans                &trans                &trans           &trans      &trans
